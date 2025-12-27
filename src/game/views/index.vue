@@ -56,8 +56,8 @@ const handleLogin = () => {
     return
   }
   
-  if (username.value.trim().length < 2) {
-    error.value = '战士名称至少需要2个字符'
+  if (username.value.trim().length < 1) {
+    error.value = '战士名称至少需要1个字符'
     return
   }
   

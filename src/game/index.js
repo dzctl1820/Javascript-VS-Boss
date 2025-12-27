@@ -11,10 +11,14 @@ export const initPhaserGame = (parentId) => {
         game = null;
     }
 
+    // 获取窗口尺寸
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
     const config = {
         type: Phaser.AUTO,
-        width: 800,
-        height: 600,
+        width: width,
+        height: height,
         parent: parentId, // 挂载点的 DOM 元素或 ID
         backgroundColor: '#2d2d2d',
         physics: {
@@ -26,7 +30,7 @@ export const initPhaserGame = (parentId) => {
         },
         scene: [MainScene],
         scale: {
-            mode: Phaser.Scale.FIT,
+            mode: Phaser.Scale.RESIZE,
             autoCenter: Phaser.Scale.CENTER_BOTH
         }
     };

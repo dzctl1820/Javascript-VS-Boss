@@ -31,11 +31,13 @@ defineExpose({ pause, resume, restart });
 
 <style scoped>
 #phaser-container {
-  width: 800px;
-  height: 600px;
-  margin: 0 auto;
-  border: 4px solid #333;
-  border-radius: 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
 }
 </style>
